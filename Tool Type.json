@@ -1,0 +1,163 @@
+{
+    "abbreviations": {
+        "SQUARE": "SQ",
+        "CORNER RADIUS": "CR",
+        "ENDMILL": "EM",
+        "STUBMILL": "EM",
+        "STRAIGHT FLUTE": "STRFL",
+        "STR FL": "STRFL",
+        "ALUMINUM XTREME": "AX",
+        "ALUMACUT": "FM",
+        "STAINLESS STEEL": "NX",
+        "SINGLECUT": "SC",
+        "DOUBLECUT": "DC",
+        "CHIPBREAKER": "CB",
+        "DIAMOND CUT": "DM",
+        "DIAMONDCUT": "DM",
+        "END CUT": "ENDCUT",
+        "WITH ENDCUT": "ENDCUT",
+        "NO ENDCUT": "NOENDCUT",
+        "COARSE": "CC",
+        "COARSE CUT": "CC",
+        "FINE CUT": "FC",
+        "DOUBLE END": "DE",
+        "DOUBLEEND": "DE",
+        "FIBERGLASS ROUTER": "FBGR",
+        "BUREND": "BUR END",
+        "MILLEND": "EM END",
+        "MILL END": "EM END",
+        "DIE MILL": "DIEMILL",
+        "STANDARD CUT DIEMILL": "DC DIEMILL",
+        "TIRE BUR": "TIRE BUR DC",
+        "HIGH PERFORMANCE POINT DRILL": "PERF POINT DRILL",
+        "DRILL & COUNTERSINK": "DRILL&COUNTERSINK",
+        "DRILL AND TAP": "DRILL&TAP",
+        "CHAMFER END": "CHAMFEREND",
+        "CHAMFER TOOL": "CHAMFERTOOL",
+        "MIRROR FINISH": "MF",
+        "O-FLUTE XTREME": "OFX",
+        "WROUTER": "ROUTER",
+        "WOOD ROUTER": "ROUTER",
+        "STRAIGHT CUT": "STRCUT",
+        "\"O\"": "O-FLUTE",
+        "MORTISSE": "MORT",
+        "MORTISE": "MORT",
+        "COMPRESSION": "COMP",
+        "WITH FLAT": "W/FLAT",
+        "TAPERED NECK": "TAPEREDNECK",
+        "RADIUS TRANSITION": "RAD TRANSITION"
+    },
+
+    "perf_series": [
+            "V4", "V5", "V7", "AX", "F45", "HY5", 
+            "HYPERMILL", "MOLD-MILL", "TWISTER", "CR TAPERMILL"],
+
+    "tool_types": {
+        "bur_cut_types":["SC","DC","CB","FM","NX","DM"],
+        "em_shapes": ["SQ", "CR", "BALL"],
+        "wr_cut": ["DOWNCUT", "UPCUT", "STRCUT", "STRFL", "\"V\""],
+        "extras": ["CC","SPIRAL","DE","MF", "CHAMFEREND", "W/FLAT", "PILOTED"],
+        "BUR_DEGREE": ["60", "90", "82"],
+        "BUR": [
+            "DIEMILL", "TIRE BUR",
+            "CYLINDER NOENDCUT", "CYLINDER ENDCUT", "RADIUS CYLINDER", 
+            "BALL", "OVAL", "RADIUS TREE", "POINTED TREE", "FLAME", "MULTI-FLUTE COUNTERSINK",
+            "INCLUDED CONE", "INCLUDED CONE", "INCLUDED RADIUS CONE", "INCLUDED POINTED CONE", 
+            "INVERTED CONE", "INCLUDED INVERTED CONE","COUNTERSINK"
+        ],
+        "DRILL": [
+            "SPOTTING DRILL", "POINT SPOTTING DRILL", "DRILL&COUNTERSINK", "FACET POINT DRILL", "POINT DRILL", "DRILL&TAP", 
+            "POINT HURRICANE DRILL", "HURRICANE POINT DRILL", "POINT SPADE DRILL", "MAXIMIZER POINT DRILL", 
+            "PERF POINT DRILL","REAMER", "ENDCUT REAMER"
+        ],
+        "EM": [
+            "DRILLMILL","ROUGHER","STAGGERED TOOTH CHAMFERING",
+            "EM","ALUMAZIP","TAPERMILL", "STRFL EM","STUBMILL", 
+            "V4","V5","V7","AX EM","F45","HY5","HYPERMILL","TWISTERMILL", "MOLD-MILL",
+            "MINI-MILL"
+        ],
+        "FBGR": [
+            "BUR END FBGR", "EM END FBGR", "PLAIN END FBGR", "DRILL END FBGR", "FISHTAIL END FBGR"
+        ],
+
+        "has_end_time": [
+            "EM", "MILL END", "PHENOLIC", "ARAMID", "FIBERGLASS", "RIPPER", "HOGGER", "COMP"
+        ],
+        "O-FLUTE": [
+            
+        ],
+        "WR": [
+            "ROUTER", "BALL ROUTER",
+            "EM END ROUTER", "MILL END ROUTER", "FISHTAIL END ROUTER", "CRESCENT END ROUTER",
+            "ARAMID ROUTER", "PHENOLIC ROUTER", "ROUTER FIBERGLASS", 
+            "RIPPER ROUTER", "RIPPER EM END ROUTER", "HOGGER EM END ROUTER"
+        ],
+        "WR_COMP": [
+            
+        ]
+
+    },
+
+    "prep": {
+        "ball_prep": {
+            "dia_cutoff": 0.7500,
+            "dia_ref_1": 0.3125,
+            "loc_ref_1": 2.9530,
+            "dia_ref_2": 0.2362,
+            "loc_ref_2": 2.9530
+            },
+
+        "cr_prep": {
+            "dia_cutoff": 0.2500,
+            "cut_%": 0.20
+
+        },
+        "fr_prep":{
+            "dia_cutoff1": 0.2362,
+            "prep_dia_inc1": 0.0050,
+            "dia_cutoff2": 0.030,
+            "prep_dia_inc2": 0.0020,
+            "prep_dia_inc3": 0.0015
+        },
+        "drill_prep": {
+            "point_prep_dia_cutoff": 0.2362
+        },
+
+        "bumping_prep":{
+            "length_cutoff": 5
+        },
+
+        "backtaper_prep": {
+            "tools": [
+                "REAMER", "FACET POINT DRILL", "POINT DRILL", "HURRICANE POINT DRILL", 
+                "POINT HURRICANE DRILL", "PERF POINT DRILL", "POINT SPADE DRILL", "MAXIMIZER POINT DRILL",
+                "POINT SPADE DRILL", "DRILL&COUNTERSINK"
+            ],
+            "rate": 40
+        },
+        "bur_neck_prep":{
+            "included_prep_angle": 14
+        },
+        "point_prep":{
+            "tools":[
+                "STAGGERED TOOTH CHAMFERING", "SPOTTING DRILL", "POINT SPOTTING DRILL", "DRILLMILL", 
+                "DRILL END FBGR",
+                "COUNTERSINK", "RADIUS TREE", "POINTED TREE", "FLAME", "MULTI-FLUTE COUNTERSINK",
+                "INCLUDED CONE", "INCLUDED RADIUS CONE", "INCLUDED POINTED CONE"
+            ],
+            
+            "prep_tip%": 0.10,
+            "drill&countersink%": 0.18,
+            "drill%": 0.15,
+            "radius_tree%": 0.55,
+            "pointed_tree%": 0.32,
+            "flame%": 0.31,
+            "multi_flute%": 0.076,
+            "60_included_cone%": 0.20,
+            "90_included_cone%": 0.10,
+            "82_included_cone%": 0.08,
+            "4deg_radius_cone%": 0.70,
+            "7deg_radius_cone%": 0.50
+        }
+    }
+}
